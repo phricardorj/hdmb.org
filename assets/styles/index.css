@@ -41,6 +41,10 @@ section p {
   line-height: 1.8rem;
 }
 
+::selection {
+  background: #000000;
+}
+
 /* Header */
 header {
   height: 90vh;
