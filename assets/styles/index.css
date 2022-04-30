@@ -364,6 +364,7 @@ header .scroll .iconify {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  margin: 20px 10px 20px;
 }
 
 .information > .container > div > img {
@@ -566,7 +567,7 @@ header .scroll .iconify {
   }
 
   .manifests p {
-    width: 100%;
+    width: 95%;
     font-size: 1.1rem;
   }
 }
