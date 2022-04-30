@@ -66,9 +66,15 @@ header .container {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
 
   height: 100%;
+}
+
+header .container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 header .container .left,
@@ -140,6 +146,15 @@ header .scroll .iconify {
 }
 
 @media (max-width: 600px) {
+  header .container .left h1 {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  header .container .left a {
+    margin-bottom: 30px;
+  }
+
   header .container .right img.urna {
     height: 130px;
   }
