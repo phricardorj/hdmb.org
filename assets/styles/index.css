@@ -90,7 +90,7 @@ header .container .left h1 {
 }
 
 header .container .left p {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 22px;
   color: #ffdf00;
 }
@@ -148,6 +148,25 @@ header .scroll .iconify {
     min-height: 85vh;
   }
 
+  header .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  header .container .right img.urna {
+    height: 130px;
+  }
+
+  header .container .right img.bandeira {
+    height: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    min-height: 100vh;
+  }
+
   header .container .left h1 {
     font-size: 17px;
   }
@@ -156,22 +175,8 @@ header .scroll .iconify {
     font-size: 12px;
   }
 
-  header .container .right img.urna {
-    height: 150px;
-  }
-
-  header .container .right img.bandeira {
-    height: 70px;
-  }
-
   header .container .left a {
     font-size: 10px;
-  }
-}
-
-@media (max-width: 320px) {
-  header {
-    min-height: 100vh;
   }
 
   header .container .right img.urna {
@@ -527,11 +532,16 @@ header .scroll .iconify {
 }
 
 @media (max-width: 1800px) {
+  .ebookDownload h1 {
+    font-size: 1.3rem;
+  }
+
   .ebookDownload p {
     font-size: 1.5rem;
   }
   .ebookDownload a {
     font-size: 1.1rem;
+    margin-bottom: 10px;
   }
   .ebookDownload img {
     height: 250px;
@@ -539,6 +549,9 @@ header .scroll .iconify {
   }
   .ebookDownload .area {
     flex-direction: column-reverse;
+  }
+  .ebookDownload .linksGroup {
+    flex-direction: column;
   }
 }
 
