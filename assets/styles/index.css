@@ -479,13 +479,6 @@ header .scroll .iconify {
   gap: 2rem;
 }
 
-.ebookDownload .area div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .ebookDownload img {
   height: 350px;
   animation: floating 2s infinite;
@@ -497,17 +490,28 @@ header .scroll .iconify {
   text-align: center;
 }
 
+.ebookDownload .linksGroup {
+  display: flex;
+  justify-content: center;
+}
+
 .ebookDownload a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #002776;
   color: #fff;
-  width: 80%;
-  max-width: 500px;
 
-  font-size: 1.6rem;
-  padding: 12px;
+  font-size: 1.5rem;
+  padding: 15px;
   border-radius: 10px;
+  margin-left: 10px;
+
   transition: all ease-in 0.2s;
+}
+
+.ebookDownload a .iconify {
+  margin-right: 10px;
 }
 
 .ebookDownload a:hover {
