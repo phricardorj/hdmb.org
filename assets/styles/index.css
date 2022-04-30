@@ -171,7 +171,7 @@ header .scroll .iconify {
 }
 
 .navbar #logo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -330,7 +330,7 @@ header .scroll .iconify {
 }
 
 .information h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .information > .container > div {
@@ -384,12 +384,13 @@ header .scroll .iconify {
 }
 
 .issue_my_title h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
 .issue_my_title p {
   font-size: 1.2rem;
+  width: 90%;
 }
 
 .issue_my_title a {
@@ -398,8 +399,8 @@ header .scroll .iconify {
   align-items: center;
 
   background: #ffdf00;
-  font-size: 2rem;
-  border-radius: 10px;
+  font-size: 1.6rem;
+  border-radius: 12px;
   font-weight: bold;
   text-transform: uppercase;
   animation: pulseShadow 2s infinite;
@@ -434,13 +435,13 @@ header .scroll .iconify {
 
   .issue_my_title p {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 /* ebookDownload styles */
 .ebookDownload h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 35px;
 }
 
@@ -465,7 +466,7 @@ header .scroll .iconify {
 }
 
 .ebookDownload p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -478,7 +479,7 @@ header .scroll .iconify {
   max-width: 500px;
 
   font-size: 1.6rem;
-  padding: 15px;
+  padding: 12px;
   border-radius: 10px;
   transition: all ease-in 0.2s;
 }
@@ -519,7 +520,7 @@ header .scroll .iconify {
 }
 
 .manifests h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
   color: #ffdf00;
 }
