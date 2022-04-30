@@ -43,7 +43,7 @@ section p {
 
 /* Header */
 header {
-  min-height: 75vh;
+  height: 90vh;
   width: 100%;
 
   background: linear-gradient(
@@ -69,10 +69,7 @@ header .container {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
-
-  gap: 3rem;
+  gap: 2rem;
 }
 
 header .container .left,
@@ -144,15 +141,6 @@ header .scroll .iconify {
 }
 
 @media (max-width: 600px) {
-  header {
-    min-height: 85vh;
-  }
-
-  header .container {
-    padding: 0;
-    margin: 0;
-  }
-
   header .container .right img.urna {
     height: 130px;
   }
@@ -164,7 +152,7 @@ header .scroll .iconify {
 
 @media (max-width: 320px) {
   header {
-    min-height: 100vh;
+    height: 100vh;
   }
 
   header .container .left h1 {
@@ -358,13 +346,20 @@ header .scroll .iconify {
 .information > .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.information > .container > div {
+  display: flex;
+  justify-content: center;
 }
 
 .information h1 {
   font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 
-.information > .container > div {
+.information > .container > div > div {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -372,11 +367,11 @@ header .scroll .iconify {
   margin: 20px 10px 20px;
 }
 
-.information > .container > div > img {
+.information > .container > div > div > img {
   height: 140px;
 }
 
-.information > .container > div > p {
+.information > .container > div > div > p {
   width: 80%;
   font-size: 1.2rem;
 }
@@ -386,11 +381,11 @@ header .scroll .iconify {
     font-size: 1.2rem;
   }
 
-  .information > .container {
+  .information > .container > div {
     flex-direction: column;
   }
 
-  .information > .container > div > p {
+  .information > .container > div > div > p {
     width: 100%;
   }
 }
