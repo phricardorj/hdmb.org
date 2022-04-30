@@ -59,13 +59,6 @@ header {
   background-size: cover;
 
   color: #fff;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  position: relative;
-  padding: 40px;
 }
 
 header .container {
@@ -74,6 +67,8 @@ header .container {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+
+  height: 100%;
 }
 
 header .container .left,
@@ -182,142 +177,17 @@ header .scroll .iconify {
 
 /* Navbar Responsive - START */
 .navbar {
-  margin-top: 40px;
-  height: 70px;
+  height: 80px;
   width: 100%;
-  max-width: 1200px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
 
-.navbar #logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
-.navbar #logo img {
-  height: 100px;
-}
-
-.navbar #links {
-  display: flex;
-  list-style: none;
-  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
-  gap: 0.5rem;
-}
-
-.navbar #links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border-radius: 10px;
-
-  padding: 0.7rem;
-  color: #fff;
-  font-size: 1.15rem;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.navbar #links a .iconify {
-  color: #ffdf00;
-  margin-right: 0.3rem;
-}
-
-.navbar #links a:hover,
-.navbar #links a:hover .iconify {
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.navbar #btn-mobile {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    width: 100%;
-  }
-
-  .navbar #links {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 110px;
-    right: 0;
-    background: #212121;
-    border: 1px solid #009c38;
-    z-index: 9999;
-    visibility: hidden;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  .navbar .menu.active #links {
-    height: 260px;
-    visibility: visible;
-  }
-
-  .navbar #links a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0.05);
-  }
-
-  .navbar #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-  }
-
-  .navbar #hamburger {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    color: #fff;
-    display: block;
-    border-top: 2px solid;
-    width: 20px;
-    transform: scale(2);
-  }
-
-  .navbar #hamburger::after,
-  .navbar #hamburger::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: 0.3s;
-    position: relative;
-  }
-
-  .navbar .menu.active #hamburger {
-    border-top-color: transparent;
-  }
-
-  .navbar .menu.active #hamburger::before {
-    transform: rotate(135deg);
-  }
-
-  .navbar .menu.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
+  position: fixed;
+  z-index: 999;
 }
 
 /* Backgrounds */
@@ -530,7 +400,7 @@ header .scroll .iconify {
   margin-top: 15px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1400px) {
   .ebookDownload h1 {
     font-size: 1.3rem;
   }
