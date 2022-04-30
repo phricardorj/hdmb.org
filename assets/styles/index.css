@@ -171,7 +171,7 @@ header .scroll .iconify {
 }
 
 .navbar #logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -330,7 +330,7 @@ header .scroll .iconify {
 }
 
 .information h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .information > .container > div {
@@ -384,7 +384,7 @@ header .scroll .iconify {
 }
 
 .issue_my_title h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -398,7 +398,7 @@ header .scroll .iconify {
   align-items: center;
 
   background: #ffdf00;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
@@ -440,42 +440,73 @@ header .scroll .iconify {
 
 /* ebookDownload styles */
 .ebookDownload h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 35px;
 }
 
+.ebookDownload .area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ebookDownload .area div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .ebookDownload img {
-  height: 300px;
+  height: 350px;
   animation: floating 2s infinite;
 }
 
 .ebookDownload p {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.ebookDownload button {
+.ebookDownload a {
+  display: block;
   background: #002776;
   color: #fff;
-  width: 250px;
+  width: 80%;
+  max-width: 500px;
 
+  font-size: 1.6rem;
+  padding: 15px;
+  border-radius: 10px;
   transition: all ease-in 0.2s;
 }
 
-.ebookDownload button:hover {
-  transform: scale(1.1);
+.ebookDownload a:hover {
   background: #009c38;
 }
 
 .ebookDownload p > span {
+  display: block;
   color: #009c38;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 @media (max-width: 1800px) {
   .ebookDownload p {
-    width: 100%;
+    font-size: 1.5rem;
+  }
+  .ebookDownload a {
     font-size: 1.1rem;
+  }
+  .ebookDownload img {
+    height: 250px;
+    animation: floating 2s infinite;
+  }
+  .ebookDownload .area {
+    flex-direction: column-reverse;
   }
 }
 
@@ -488,7 +519,7 @@ header .scroll .iconify {
 }
 
 .manifests h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   color: #ffdf00;
 }
@@ -559,6 +590,7 @@ footer img {
 @media (max-width: 1800px) {
   footer {
     padding: 20px;
+    text-align: center;
   }
 
   footer .container {
