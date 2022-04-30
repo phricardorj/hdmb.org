@@ -86,7 +86,7 @@ header .container .right {
 
 header .container .left h1 {
   font-size: 28px;
-  text-shadow: rgb(0, 0, 0) 2px 5px;
+  text-shadow: rgb(0, 0, 0) 2px 5px 10px;
 }
 
 header .container .left p {
@@ -148,12 +148,38 @@ header .scroll .iconify {
     min-height: 85vh;
   }
 
+  header .container .left h1 {
+    font-size: 17px;
+  }
+
+  header .container .left p {
+    font-size: 12px;
+  }
+
   header .container .right img.urna {
     height: 150px;
   }
 
   header .container .right img.bandeira {
     height: 70px;
+  }
+
+  header .container .left a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    min-height: 100vh;
+  }
+
+  header .container .right img.urna {
+    height: 100px;
+  }
+
+  header .container .right img.bandeira {
+    height: 40px;
   }
 }
 
