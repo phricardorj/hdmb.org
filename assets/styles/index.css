@@ -223,7 +223,7 @@ header .scroll .iconify {
 
 .navbar #logo img {
   height: 80px;
-  filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+  filter: drop-shadow(5px 5px 10px rgba(33, 33, 33, 0.5));
 }
 
 .navbar #links {
@@ -240,7 +240,7 @@ header .scroll .iconify {
   font-size: 1.1rem;
   text-decoration: none;
 
-  text-shadow: rgb(0, 0, 0) 2px 5px 10px;
+  text-shadow: rgba(33, 33, 33, 0.5) 2px 5px 10px;
 
   color: #fff;
   border-radius: 10px;
