@@ -198,12 +198,6 @@ header .scroll .iconify {
   width: 100%;
   padding: 50px;
 
-  background: rgba(33, 33, 33, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur(13.5px);
-  -webkit-backdrop-filter: blur(13.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-
   position: fixed;
   z-index: 999;
   top: 0;
@@ -236,9 +230,14 @@ header .scroll .iconify {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  color: #fff;
   font-size: 1.1rem;
   text-decoration: none;
+
+  background: #002776;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  color: #fff;
+  border-radius: 10px;
   transition: 0.2s;
 }
 
@@ -247,12 +246,38 @@ header .scroll .iconify {
 }
 
 .navbar #links a:hover {
-  color: #009c38;
+  color: #ffdf00;
   transform: scale(1.05);
 }
 
 .navbar #btn-mobile {
   display: none;
+}
+
+@media (max-width: 1400px) {
+  .navbar #links {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 110px;
+    right: 0;
+    background: #212121;
+    border: 1px solid #009c38;
+    z-index: 9999;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .navbar .menu {
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }
 
 /* Backgrounds */
@@ -279,6 +304,26 @@ header .scroll .iconify {
 .bgBlack {
   background: #212121;
   color: #ffffff;
+}
+
+.bgWhiteGlass {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgBlackGlass {
+  background: rgba(33, 33, 33, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgTransparent {
+  background: transparent !important;
 }
 
 /* information styles */
