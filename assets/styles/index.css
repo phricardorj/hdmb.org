@@ -75,6 +75,7 @@ header .container div {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 50px;
 }
 
 header .container .left,
@@ -147,6 +148,10 @@ header .scroll .iconify {
 }
 
 @media (max-width: 600px) {
+  header .container div {
+    margin: 0;
+  }
+
   header .container .left h1 {
     font-size: 24px;
     width: 90%;
@@ -189,10 +194,11 @@ header .scroll .iconify {
 
 /* Navbar Responsive - START */
 .navbar {
-  height: 80px;
+  height: 70px;
   width: 100%;
+  padding: 50px;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(33, 33, 33, 0.5);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
@@ -200,6 +206,53 @@ header .scroll .iconify {
 
   position: fixed;
   z-index: 999;
+  top: 0;
+  transition: top 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.navbar #logo img {
+  height: 80px;
+}
+
+.navbar #links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar #links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar #links a .iconify {
+  margin-right: 7px;
+}
+
+.navbar #links a:hover {
+  color: #009c38;
+  transform: scale(1.05);
+}
+
+.navbar #btn-mobile {
+  display: none;
 }
 
 /* Backgrounds */
