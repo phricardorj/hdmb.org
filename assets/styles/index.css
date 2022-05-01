@@ -206,6 +206,12 @@ header .scroll .iconify {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: rgba(33, 33, 33, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar .menu {
@@ -256,9 +262,10 @@ header .scroll .iconify {
 
 @media (max-width: 1400px) {
   .navbar .menu {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     position: relative;
+    justify-content: center;
   }
 
   .navbar #btn-mobile {
@@ -272,8 +279,8 @@ header .scroll .iconify {
     justify-content: center;
 
     position: absolute;
-    width: 100%;
-    height: 0;
+    width: 100% !important;
+    height: 45vh !important;
     top: 70px;
     right: 0;
 
@@ -298,6 +305,8 @@ header .scroll .iconify {
   .navbar #links a {
     box-shadow: none;
     background: transparent;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .navbar #btn-mobile {
