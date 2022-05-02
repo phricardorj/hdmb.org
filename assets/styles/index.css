@@ -109,10 +109,10 @@ header .container .right img.urna {
   height: 240px;
 }
 
-header .container .right img.bandeira {
+header .container .right img.cf {
   position: absolute;
-  height: 100px;
-  bottom: -25px;
+  height: 150px;
+  bottom: -45px;
   filter: drop-shadow(0 0 5rem #212121);
   animation: floating 2s infinite;
 }
@@ -161,8 +161,8 @@ header .scroll .iconify {
     height: 130px;
   }
 
-  header .container .right img.bandeira {
-    height: 60px;
+  header .container .right img.cf {
+    height: 90px;
   }
 }
 
@@ -187,7 +187,7 @@ header .scroll .iconify {
     height: 100px;
   }
 
-  header .container .right img.bandeira {
+  header .container .right img.cf {
     height: 40px;
   }
 }
