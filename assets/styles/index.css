@@ -469,6 +469,17 @@ header .scroll .iconify {
     url("../images/bgBrasilia.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
+  height: 700px;
+}
+
+.issue_my_title iframe {
+  height: 100%;
+  width: 100%;
+  max-height: 360px;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 20px;
+  aspect-ratio: 16/9;
 }
 
 .issue_my_title .container {
@@ -502,7 +513,7 @@ header .scroll .iconify {
   animation: pulseShadow 2s infinite;
   transition: 0.2s;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .issue_my_title a .iconify {
@@ -514,10 +525,6 @@ header .scroll .iconify {
 }
 
 @media (max-width: 1800px) {
-  .issue_my_title {
-    height: 600px;
-  }
-
   .issue_my_title h1 {
     display: block;
     font-size: 1.2rem;
@@ -525,7 +532,6 @@ header .scroll .iconify {
   }
 
   .issue_my_title a {
-    margin-top: 30px;
     font-size: 1.1rem;
   }
 
