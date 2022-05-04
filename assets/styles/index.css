@@ -121,7 +121,7 @@ header .container .right img.urna {
 header .container .right img.cf {
   position: absolute;
   height: 150px;
-  bottom: -45px;
+  bottom: -55px;
   filter: drop-shadow(0 0 5rem #212121);
   animation: floating 2s infinite;
 }
