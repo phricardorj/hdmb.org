@@ -10,6 +10,15 @@ a {
   text-decoration: none;
 }
 
+a.disabled,
+a:hover {
+  opacity: 0.5 !important;
+  cursor: default;
+  background: #b7b7b7 !important;
+  color: #ffffff !important;
+  pointer-events: none !important;
+}
+
 button {
   border: 0;
   box-shadow: none;
