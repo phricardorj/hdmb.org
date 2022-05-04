@@ -8,15 +8,15 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
-a.disabled,
-a:hover {
+a.disabled {
   opacity: 0.5 !important;
-  cursor: default;
   background: #b7b7b7 !important;
   color: #ffffff !important;
   pointer-events: none !important;
+  cursor: default;
 }
 
 button {
