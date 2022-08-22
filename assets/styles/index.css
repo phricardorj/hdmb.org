@@ -4,6 +4,23 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #e5e5e5;
   overflow-x: hidden;
+  
+ scroll-behavior: smooth;
+ scrollbar-color: ##00963f #212121;
+ scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: ##00963f;
+    border-radius: 8px;
 }
 
 a {
