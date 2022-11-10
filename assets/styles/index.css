@@ -159,11 +159,13 @@ header .container .left a {
   letter-spacing: 0.2rem;
   transition: 0.2s ease-in;
   margin-bottom: 30px;
+  animation: pulseShadow 2s infinite;
 }
 
 header .container .left a:hover {
   background: rgba(0, 156, 56, 0.3);
   box-shadow: 0 0 0 3px rgba(0, 156, 56, 0.8), 0 0 0 5px #009c38;
+  animation: none;
 }
 
 header .scroll {
