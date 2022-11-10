@@ -13,17 +13,3 @@ const toggleMenu = (event) => {
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
-const navbar = document.querySelector(".navbar");
-let lastScrollTop;
-
-window.addEventListener("scroll", () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollTop > lastScrollTop) {
-    navbar.style.top = "-120px";
-  } else {
-    navbar.style.top = "0";
-  }
-
-  lastScrollTop = scrollTop;
-});
