@@ -235,8 +235,8 @@ header .scroll .iconify {
 
   position: relative;
   z-index: 999;
-  top: 0;
-  transition: top 0.3s;
+  top: -25px;
+  transition: 0.3s;
 
   display: flex;
   align-items: center;
